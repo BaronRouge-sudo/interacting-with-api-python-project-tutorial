@@ -38,4 +38,4 @@ y = "popularity"
 
 scatter_plot = sns.scatterplot(data = Dfsongs, x = x , y = y)
 fig = scatter_plot.get_figure()
-print("Tal y como se muestra en el gráfico, no se aprecia relación entre la duración y la popularidad")
+print("No se aprecia relación entre la duración y la popularidad")
