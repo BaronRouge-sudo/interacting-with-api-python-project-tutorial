@@ -9,14 +9,10 @@ import os
 # load the .env file variables
 load_dotenv()
 
-
-
 client_id = os.environ.get("CLIENT_ID")
 client_secret = os.environ.get("CLIENT_SECRET")
 
-
 spotify = spotipy.Spotify(auth_manager = SpotifyClientCredentials(client_id = client_id,client_secret = client_secret))
-
 
 artist_url = 'spotify:artist:6mdiAmATAx73kdxrNrnlao'
 results = spotify.artist_top_tracks(artist_url)
